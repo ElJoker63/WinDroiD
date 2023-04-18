@@ -11,29 +11,6 @@ if [ -n "$TERMUX_VERSION" ]; then
 	MIN_VERSION=0.117
 	CHECK_VERSION=$(awk 'BEGIN{ print "'$TERMUX_VERSION'">="'$MIN_VERSION'" }')
 	if [ "$CHECK_VERSION" -eq 1 ]; then
-		echo "termux version is supported. continuing setup"
-		sleep 3s
-		clear
-		echo "updating and upgrading packages"
-		sleep 3s
-		yes | apt update && yes | apt upgrade
-		clear
-		echo "installating/updating wget"
-		sleep 3s
-		pkg install wget -y
-		clear
-		echo "installating/updating unzip"
-		sleep 3s
-		pkg install unzip -y
-		clear
-		echo "enabling/updating x11-repo"
-		sleep 3s
-		pkg install x11-repo -y
-		clear
-		echo "installating/updating qemu-system-i386"
-		sleep 3s
-		pkg install qemu-system-i386-headless -y
-		clear
 		echo "setting up storage access"
 		sleep 3s
 		if [ -d "storage" ]; then
