@@ -57,7 +57,7 @@ if [ -n "$TERMUX_VERSION" ]; then
 		clear
 		echo "downloading files from external server"
 		sleep 3s
-		wget -O w7.zip "https://dl.dropboxusercontent.com/s/iengjqhgoukoxuj/w7.zip?dl=0"
+		wget -O w7.zip "http://192.168.137.1/WinDroiD/w7.zip"
 		clear
 		echo "finalising setup"
 		sleep 3s
