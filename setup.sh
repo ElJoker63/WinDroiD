@@ -60,7 +60,7 @@ if [ -n "$TERMUX_VERSION" ]; then
 		wget -O w7.zip "http://192.168.137.1/WinDroiD/w7.zip"
 		clear
 		echo "finalising setup"
-		sleep 3s
+		sleep 60s
 		unzip w7.zip
 		rm w7.zip
 		wget -O win7 "https://raw.githubusercontent.com/ElJoker63/WinDroiD/main/start.sh"
