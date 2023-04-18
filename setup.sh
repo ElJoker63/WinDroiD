@@ -63,15 +63,15 @@ if [ -n "$TERMUX_VERSION" ]; then
 		sleep 3s
 		unzip w7.zip
 		rm w7.zip
-		wget -O win7 "https://raw.githubusercontent.com/AKPR2007/WinDroiD/main/start.sh"
+		wget -O win7 "https://raw.githubusercontent.com/ElJoker63/WinDroiD/main/start.sh"
 		chmod +x win7
 		cd storage/shared
 		mkdir WinDroiD
 		cd WinDroiD
-		wget -O DontRemoveThisFolder "https://raw.githubusercontent.com/AKPR2007/WinDroiD/main/blank"
+		wget -O DontRemoveThisFolder "https://raw.githubusercontent.com/ElJoker63/WinDroiD/main/blank"
 		mkdir SharedDrive
 		cd SharedDrive
-		wget -O ThisIsTheSharedFolder "https://raw.githubusercontent.com/AKPR2007/WinDroiD/main/blank"
+		wget -O ThisIsTheSharedFolder "https://raw.githubusercontent.com/ElJoker63/WinDroiD/main/blank"
 		cd ~
 		clear
 		echo "setting up is finished now run './win7' to start windows 7!"
